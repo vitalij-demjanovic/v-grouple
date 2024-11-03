@@ -16,7 +16,7 @@ export default function LandingPageMenu({ orientation }: MenuProps) {
   switch (orientation) {
     case 'desktop':
       return (
-        <Card>
+        <Card className='hidden rounded-2xl p-2 lg:flex'>
           <CardContent className='flex gap-2 p-0'>
             {GROUPLE_CONSTANTS.landingPageMenu.map(menuItem => (
               <Link
@@ -28,7 +28,7 @@ export default function LandingPageMenu({ orientation }: MenuProps) {
                 className={cn(
                   'flex items-center gap-2 rounded-xl px-4 py-2',
                   section == menuItem.path
-                    ? 'border-[#27272A] bg-[#09090B]'
+                    ? 'text-themeBlack border-[#27272A] bg-white'
                     : ''
                 )}
               >

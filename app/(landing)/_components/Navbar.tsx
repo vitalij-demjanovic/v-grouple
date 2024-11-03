@@ -11,7 +11,7 @@ export default function LandingPageNavbar() {
       <p className='text-2xl font-bold'>V-Grouple.</p>
       <LandingPageMenu orientation='desktop' />
       <div className='flex gap-2'>
-        <Link href='/'>
+        <Link href='/sign-in'>
           <Button
             variant='outline'
             className='border-themGray hover:bg-themeGray flex gap-2 rounded-2xl'
